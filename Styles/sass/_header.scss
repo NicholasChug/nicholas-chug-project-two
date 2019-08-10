@@ -33,8 +33,16 @@
     position: relative;
 }
 
+.blog-page-heading {
+    padding-left: 10%;
+    padding-top: 5%;
+}
 
-
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+}
 
 // Contact Page Header
 .contact-section-header {
@@ -42,4 +50,9 @@
     background-repeat: no-repeat;
     height: 80vh;
     position: relative;
+}
+
+.contact-page-heading {
+    padding-left: 10%;
+    padding-top: 5%;
 }

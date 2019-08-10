@@ -216,6 +216,7 @@ html {
   letter-spacing: 0.12rem;
   color: #151514;
   font-family: "Kumar One", sans-serif;
+  line-height: 2.4rem;
 }
 
 .navbar {
@@ -247,6 +248,15 @@ html {
   font-size: 2rem;
   line-height: 3.2rem;
   letter-spacing: 0.2rem;
+}
+
+.bolded-text {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .footer-section {
@@ -308,11 +318,27 @@ html {
   position: relative;
 }
 
+.blog-page-heading {
+  padding-left: 10%;
+  padding-top: 5%;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 80px;
+}
+
 .contact-section-header {
   background-image: url(../sanctuary-helpers-final-images/contact-image.jpg);
   background-repeat: no-repeat;
   height: 80vh;
   position: relative;
+}
+
+.contact-page-heading {
+  padding-left: 10%;
+  padding-top: 5%;
 }
 
 body {
@@ -352,6 +378,9 @@ h1, h2, h3, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .second-section-text {
@@ -418,39 +447,48 @@ h1, h2, h3, p {
 .fourth-section {
   background-color: #e0fddf;
   padding: 5% 0;
+}
+
+.fourth-section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fourth-section-inside-1 {
   position: relative;
+  top: -120px;
 }
 
-.fourth-section-text-1 {
-  padding-left: 60%;
-  padding-right: 5%;
+.fourth-section-inside-4 {
+  position: relative;
+  bottom: -120px;
 }
 
-.fourth-section-text-2 {
-  padding-right: 60%;
-  padding-left: 5%;
+.fourth-section-inside-1, .fourth-section-text-1, .fourth-section-text-2, .fourth-section-inside-4 {
+  -ms-flex-preferred-size: calc(50%);
+      flex-basis: calc(50%);
 }
 
 .fourth-section-img-left {
   -webkit-box-shadow: 10px 10px #f8fb05;
           box-shadow: 10px 10px #f8fb05;
-  position: absolute;
-  top: -40px;
-  width: 40%;
 }
 
 .fourth-section-img-right {
   -webkit-box-shadow: -10px 10px #f8fb05;
           box-shadow: -10px 10px #f8fb05;
-  position: absolute;
-  width: 40%;
-  right: 0;
-  bottom: -40px;
 }
 
 .fifth-section {
   background-color: #f5f5f5;
-  padding-bottom: 5%;
+  padding-bottom: 8%;
 }
 
 .fifth-section-container {
@@ -467,14 +505,87 @@ h1, h2, h3, p {
 }
 
 .fifth-section-heading {
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
 .bottom-section {
   background-color: #e0fddf;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main-blog-image {
+  width: 60%;
+  position: absolute;
+  top: -140px;
+  -webkit-box-shadow: 30px 20px #f8fb05;
+          box-shadow: 30px 20px #f8fb05;
+}
+
+.blog-text {
+  width: 62%;
+  padding-top: 32%;
+  padding-left: 10%;
+  background-color: #f5f5f5;
+  border-right: 10px solid #f8fb05;
+  border-bottom: 10px solid #f8fb05;
 }
 
 .sidebar {
-  width: 30%;
+  width: 25%;
   background-color: #f8fb05;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  padding-left: 2%;
+  right: 0;
+  top: 150px;
+}
+
+.comments-section {
+  width: 62%;
+  padding-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blog-username, .blog-name {
+  background-color: #e0fddf;
+}
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid #065635;
+}
+
+.blog-textarea {
+  background-color: #e0fddf;
+  border: 2px solid #065635;
+}
+
+.bottom-section-contact {
+  background-color: #e0fddf;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.social-icons li {
+  display: inline;
+  color: #065635;
 }

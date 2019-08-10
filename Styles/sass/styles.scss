@@ -52,6 +52,7 @@ h1, h2, h3, p {
 
 .second-section-container {
     display: flex;
+    justify-content: space-between;
 }
 
 .second-section-text {
@@ -106,42 +107,41 @@ h1, h2, h3, p {
 .fourth-section {
     background-color: #e0fddf;
     padding: 5% 0;
+}
+
+.fourth-section-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.fourth-section-inside-1 {
     position: relative;
+    top: -120px;
 }
 
-// .fourth-section-inside-container {
-    
-// }
 
-.fourth-section-text-1 {
-    padding-left: 60%;
-    padding-right: 5%;
+.fourth-section-inside-4 {
+    position: relative;
+    bottom: -120px;
 }
 
-.fourth-section-text-2 {
-    padding-right: 60%;
-    padding-left: 5%;
+.fourth-section-inside-1, .fourth-section-text-1, .fourth-section-text-2, .fourth-section-inside-4 {
+    flex-basis: calc(50%);
 }
 
 .fourth-section-img-left {
     box-shadow: 10px 10px #f8fb05;
-    position: absolute;
-    top: -40px;
-    width: 40%;
 }
 
 .fourth-section-img-right {
     box-shadow: -10px 10px #f8fb05;
-    position: absolute;
-    width: 40%;
-    right: 0;
-    bottom: -40px;
 }
 
 // Fifth Section Styling
 .fifth-section {
     background-color: #f5f5f5;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
 }
 
 .fifth-section-container {
@@ -153,7 +153,7 @@ h1, h2, h3, p {
 }
 
 .fifth-section-heading {
-    padding-top: 5%;
+    padding-top: 10%;
 }
 
 // Blog Page Styling
@@ -162,15 +162,69 @@ h1, h2, h3, p {
 
 .bottom-section {
     background-color: #e0fddf;
+    position: relative;
+    display: flex;
+}
+
+.main-blog-image {
+    width: 60%;
+    position: absolute;
+    top: -140px;
+    box-shadow: 30px 20px #f8fb05;
+}
+
+.blog-text {
+    width: 62%;
+    padding-top: 32%;
+    padding-left: 10%;
+    background-color: #f5f5f5;
+    border-right: 10px solid #f8fb05;
+    border-bottom: 10px solid #f8fb05;
 }
 
 .sidebar {
-    width: 30%;
+    width: 25%;
     background-color: #f8fb05;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding-left: 2%;
+    right: 0;
+    top: 150px;
 }
 
+.comments-section {
+    width: 62%;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-username, .blog-name {
+    background-color: #e0fddf;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid #065635;
+}
+
+.blog-textarea {
+    background-color: #e0fddf;
+    border: 2px solid #065635;
+}
+
+
 // Contact Page Styling
+.bottom-section-contact {
+    background-color: #e0fddf;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
 
-//Bottom Section Styling
+.social-icons li{
+    display: inline;
+    color: #065635;
 
-
+}
