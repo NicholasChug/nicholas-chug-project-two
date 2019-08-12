@@ -233,6 +233,10 @@ html {
   color: #151514;
 }
 
+.active {
+  border-bottom: 2px solid #f8fb05;
+}
+
 .button {
   font-family: "Kumar One", sans-serif;
   font-size: 2rem;
@@ -319,6 +323,13 @@ html {
   margin: 2% 3%;
 }
 
+.fa-bars {
+  visibility: hidden;
+  position: absolute;
+  top: 25px;
+  right: 5px;
+}
+
 .blog-header-section {
   background-image: url(../sanctuary-helpers-final-images/blog-image.jpg);
   background-repeat: no-repeat;
@@ -334,7 +345,7 @@ html {
 .logo {
   position: absolute;
   top: 20px;
-  left: 142px;
+  left: 10%;
 }
 
 .contact-section-header {
@@ -390,6 +401,9 @@ h1, h2, h3, p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .second-section-text {
@@ -413,6 +427,9 @@ h1, h2, h3, p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .info-section {
@@ -420,26 +437,16 @@ h1, h2, h3, p {
   padding: 5% 0;
 }
 
-.info-section-container {
+.info-section-inside-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.info-section-inside-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 2% auto;
+  margin: 3% auto;
 }
 
 .info-icons {
@@ -462,6 +469,9 @@ h1, h2, h3, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .fourth-section-img-left {
@@ -476,11 +486,13 @@ h1, h2, h3, p {
           box-shadow: -10px 10px #f8fb05;
   position: relative;
   bottom: -120px;
+  right: -22px;
 }
 
 .fourth-section-text-1 {
   padding: 5%;
   text-align: right;
+  margin-right: 5%;
 }
 
 .fourth-section-text-2 {
@@ -515,6 +527,9 @@ h1, h2, h3, p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 
 .main-blog-image {
@@ -601,6 +616,10 @@ input[type=text], input[type=email] {
   border-bottom: 2px solid #065635;
 }
 
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  background-color: #ffffff;
+}
+
 .blog-textarea {
   background-color: #e0fddf;
   border: 2px solid #065635;
@@ -661,4 +680,95 @@ input[type=text], input[type=email] {
   display: inline;
   color: #065635;
   margin: 0 5%;
+}
+
+@media (max-width: 768px) {
+  .blog-page-heading {
+    padding-top: 15%;
+  }
+  .blog-header-section {
+    height: 40vh;
+  }
+  .comments-section {
+    width: 90%;
+  }
+  .blog-form {
+    width: 90%;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .fa-bars {
+    visibility: visible;
+    right: 5%;
+  }
+  .contact-page-heading {
+    padding-top: 15%;
+  }
+  .contact-section-header {
+    height: 50vh;
+  }
+  .bottom-section-contact {
+    display: block;
+  }
+  .contact-form {
+    display: block;
+    position: relative;
+    width: 80%;
+    left: 45px;
+  }
+  .social-right-section {
+    text-align: center;
+    padding-bottom: 10%;
+    margin-top: -20%;
+  }
+}
+
+@media (max-width: 375px) {
+  .blog-page-heading {
+    padding-top: 30%;
+  }
+  .blog-header-section {
+    height: 40vh;
+  }
+  .main-blog-image {
+    display: none;
+  }
+  .bottom-section {
+    display: block;
+  }
+  .blog-text {
+    width: 100%;
+    display: block;
+    padding: 5% 10% 2%;
+  }
+  .sidebar {
+    width: 100%;
+    display: block;
+    position: relative;
+    top: 0;
+  }
+  .comments-img {
+    display: block;
+    width: 100%;
+  }
+  .contact-page-heading {
+    padding-top: 30%;
+  }
+  .contact-form {
+    left: 30px;
+    top: -50px;
+  }
+}
+
+@media (max-width: 320px) {
+  .blog-page-heading {
+    padding-top: 35%;
+  }
+  .contact-page-heading {
+    padding-top: 35%;
+  }
+  .social-right-section {
+    margin-top: -10%;
+  }
 }

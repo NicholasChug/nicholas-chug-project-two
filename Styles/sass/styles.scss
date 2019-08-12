@@ -53,6 +53,7 @@ h1, h2, h3, p {
 .second-section-container {
     display: flex;
     justify-content: space-between;
+    flex: 1 0 auto;
 }
 
 .second-section-text {
@@ -72,6 +73,7 @@ h1, h2, h3, p {
 .third-section-container {
     display: flex;
     justify-content: space-between;
+    flex: 1 0 auto;
 }
 
 // Info Section Styling
@@ -80,16 +82,20 @@ h1, h2, h3, p {
     padding: 5% 0;
 }
 
-.info-section-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
+// .info-section-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     flex-direction: row;
+//     flex: 1 0 auto;
+// }
 
 .info-section-inside-container {
+    display: flex;
+    // flex-wrap: wrap;
+    flex: 1 0 auto;
     flex-basis: 50%;
-    flex-direction: column;
-    margin: 2% auto;
+    // flex-direction: column;
+    margin: 3% auto;
 }
 
 .info-icons {
@@ -111,6 +117,7 @@ h1, h2, h3, p {
 
 .fourth-section-container {
     display: flex;
+    flex: 1 0 auto;
 }
 
 .fourth-section-img-left {
@@ -123,11 +130,13 @@ h1, h2, h3, p {
     box-shadow: -10px 10px #f8fb05;
     position: relative;
     bottom: -120px;
+    right: -22px;
 }
 
 .fourth-section-text-1 {
     padding: 5%;
     text-align: right;
+    margin-right: 5%;
 }
 
 .fourth-section-text-2 {
@@ -160,6 +169,7 @@ h1, h2, h3, p {
     background-color: #e0fddf;
     position: relative;
     display: flex;
+    flex: 1 0 auto;
 }
 
 .main-blog-image {
@@ -230,6 +240,10 @@ input[type=text], input[type=email] {
     border-bottom: 2px solid #065635;
 }
 
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    background-color: #ffffff;
+}
+
 .blog-textarea {
     background-color: #e0fddf;
     border: 2px solid #065635;
@@ -292,10 +306,119 @@ input[type=text], input[type=email] {
 
 // Responsive Web Design Styling
 
-// Need Ipad size and iphone size
+@media (max-width:768px) {
+    // Blog Page
+    .blog-page-heading {
+        padding-top: 15%;
+    }
 
-// Ipad size 768px
+    .blog-header-section {
+        height: 40vh;
+    }
 
-// Iphone 6/7/8 375px
+    .comments-section {
+        width: 90%;
+    }
 
-// Iphone 5 320px
+    .blog-form {
+        width: 90%;
+    }
+
+    // Contact Page
+    .navbar ul {
+        display: none;
+    }
+    
+    .fa-bars {
+        visibility: visible;
+        right: 5%;
+    }
+
+    .contact-page-heading {
+        padding-top: 15%;
+    }
+
+    .contact-section-header {
+        height: 50vh;
+    }
+
+    .bottom-section-contact {
+        display: block;
+    }
+
+    .contact-form {
+        display: block;
+        position: relative;
+        width: 80%;
+        left: 45px;
+    }
+
+    .social-right-section {
+        text-align: center;
+        padding-bottom: 10%;
+        margin-top: -20%;
+    }
+}
+
+@media (max-width:375px) {
+    // Blog Page
+    .blog-page-heading {
+        padding-top: 30%;
+    }
+    
+    .blog-header-section {
+        height: 40vh;
+    }
+
+    .main-blog-image {
+        display: none;
+    }
+
+    .bottom-section {
+        display: block;
+    }
+
+    .blog-text {
+        width: 100%;
+        display: block;
+        padding: 5% 10% 2%;
+    }
+
+    .sidebar {
+        width: 100%;
+        display: block;
+        position: relative;
+        top: 0;
+    }
+
+    .comments-img {
+        display: block;
+        width: 100%;
+    }
+
+    // Contact Page
+    .contact-page-heading {
+        padding-top: 30%;
+    }
+
+    .contact-form {
+        left: 30px;
+        top: -50px;
+    }
+}
+
+@media (max-width:320px) {
+    // Blog Page
+    .blog-page-heading {
+        padding-top: 35%;
+    }
+
+    // Contact Page
+    .contact-page-heading {
+        padding-top: 35%;
+    }
+
+    .social-right-section {
+        margin-top: -10%;
+    }
+}

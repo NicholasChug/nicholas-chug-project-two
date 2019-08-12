@@ -25,6 +25,13 @@
     margin: 2% 3%;
 }
 
+.fa-bars {
+    visibility: hidden;
+    position: absolute;
+    top: 25px;
+    right: 5px;
+}
+
 // Blog Page Header
 .blog-header-section {
     background-image: url(../sanctuary-helpers-final-images/blog-image.jpg);
@@ -41,7 +48,7 @@
 .logo {
     position: absolute;
     top: 20px;
-    left: 142px;
+    left: 10%;
 }
 
 // Contact Page Header
