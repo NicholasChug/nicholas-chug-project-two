@@ -11,10 +11,16 @@
     <script src="https://kit.fontawesome.com/79a297bdda.js"></script>
     <title>HackerYou Bootcamp Project #2 - Nicholas Chug</title>
 </head>
+<!-- Body Section of the Index Webpage -->
 <body>
-
+    <!-- Accessible Skip Links -->
+    <a href="#main-content" class="skip-link">Skip to main content.</a>
+    <a href="#gallery-content" class="skip-link">Skip to gallery.</a>
+    <a href="#bottem-content" class="skip-link">Skip to bottom section.</a>
+    <!-- Main Section of the Index Webpage -->
     <main>
         <header class="index-header-section">
+            <!-- Navbar imported with SASS -->
             <nav class="navbar">
                 <ul>
                     <li><a class="active" href="index.html">Home</a></li>
@@ -22,12 +28,15 @@
                     <li><a href="blog-page.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <!-- Hidden Burger Menu seen at smaller responsive sizes -->
                 <i class="fas fa-bars fa-2x"></i>
             </nav>
             <h1 class="main-heading index-heading">Sanctuary <span class="header-span">Helpers</span></h1>
-            <img src="./sanctuary-helpers-final-images/header-box.png" class="header-left-image"alt="">
+            <img src="./sanctuary-helpers-final-images/header-box.png" class="header-left-image"
+            alt="A blue couch positioned in a white room">
         </header>
-        <section class="second-section">
+        <!-- Second Section of the Index Page with intro heading and associated pictire -->
+        <section class="second-section" id="main-content">
             <div class="wrapper second-section-container">
                 <div class="second-section-text">
                     <h2 class="secondary-heading">Discovering New Materials</h2>
@@ -35,16 +44,18 @@
                     <button class="button">Find Out More</button>
                 </div>
                 <div class="second-section-img">
-                    <img src="./sanctuary-helpers-final-images/small-box.jpg" class="second-section-pic" alt="">
+                    <img src="./sanctuary-helpers-final-images/small-box.jpg" class="second-section-pic" alt="A picturesque living room with a couch, wall painting, and coffee table ">
                 </div>
         </section>
+        <!-- Third Section/Picture Carousel of Index Page -->
         <section class="third-section">
             <div class="wrapper third-section-container">
-                <img src="./sanctuary-helpers-final-images/gallery-image-1.jpg" alt="">
-                <img src="./sanctuary-helpers-final-images/gallery-image-2.jpg" alt="">
-                <img src="./sanctuary-helpers-final-images/gallery-image-3.jpg" alt="">
+                <img src="./sanctuary-helpers-final-images/gallery-image-1.jpg" alt="A dark green dresser with paintings on top of it">
+                <img src="./sanctuary-helpers-final-images/gallery-image-2.jpg" alt="A modern style living room with a pumpkin coloured sofa with magazines and coffee table">
+                <img src="./sanctuary-helpers-final-images/gallery-image-3.jpg" alt="Anotherr living room photo, with a wirefram loveseat in a modern living room">
             </div>
         </section>
+        <!-- Information Section of Index Page -->
         <article id="about" class="info-section">
             <div class="wrapper info-section-container">
                 <div class="info-section-inside-container">
@@ -69,11 +80,12 @@
                 </div>
             </div>
         </article>
-        <section class="fourth-section">
+        <!-- Fourth Section/Gallery of Index Page -->
+        <section class="fourth-section" id="gallery-content">
             <div class="fourth-section-container">
                 <div class="fourth-section-inside-container">
                     <div>
-                        <img src="./sanctuary-helpers-final-images/left-image.jpg" class="fourth-section-img-left" alt="">
+                        <img src="./sanctuary-helpers-final-images/left-image.jpg" class="fourth-section-img-left" alt="A dining room table for two with a bonsai tree atop it">
                     </div>
                     <div class="fourth-section-text-1">
                         <h2 class="secondary-heading">Group Programs</h2>
@@ -81,7 +93,6 @@
                         <button class="button">Read More</button>
                     </div>
                 </div>
-                
                 <div class="fourth-section-inside-container">
                     <div class="fourth-section-text-2">
                         <h2 class="secondary-heading">New Locations</h2>
@@ -89,13 +100,14 @@
                         <button class="button">Read More</button>
                     </div>
                     <div>
-                        <img src="./sanctuary-helpers-final-images/right-image.jpg" class="fourth-section-img-right"alt="">
+                        <img src="./sanctuary-helpers-final-images/right-image.jpg" class="fourth-section-img-right"alt="Two poolside chairs sitting against a back wall">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="fifth-section">
-            <img src="./sanctuary-helpers-final-images/banner-image.jpg" alt="">
+        <!-- Fifth Section/Bottom of Index Page -->
+        <section class="fifth-section" id="bottem-content">
+            <img src="./sanctuary-helpers-final-images/banner-image.jpg" alt="Another modern living room depicting a sofa accompanied by two chairs and a coffee table">
             <div class="fifth-section-container">
                 <div>
                     <h2 class="secondary-heading fifth-section-heading">Search By Style</h2>
@@ -105,9 +117,9 @@
             </div>
         </section>
     </main>
+    <!-- Footer Section imported with SASS -->
     <footer class="footer-section">
         <p>Copyright &copy; 2019 HackerYou</p>
     </footer>
-
 </body>
 </html>

@@ -11,7 +11,11 @@
     <script src="https://kit.fontawesome.com/79a297bdda.js"></script>
     <title>HackerYou Bootcamp Project #2 - Nicholas Chug</title>
 </head>
+<!-- Body Section of the Contact Page -->
 <body>
+    <!-- Accessible Skip Links -->
+    <a href="#contact-content" class="skip-link">Skip to contact form.</a>
+    <!-- Main Section of the Contact PAge -->
     <main>
         <header class="contact-section-header">
             <nav class="navbar">
@@ -21,13 +25,16 @@
                     <li><a href="blog-page.html">Blog</a></li>
                     <li><a class="active" href="contact.html">Contact</a></li>
                 </ul>
+                <!-- Hidden Burger Menu seen at smaller responsive sizes -->
                 <i class="fas fa-bars fa-2x"></i>
             </nav>
             <h3 class="logo">Sanctuary <span class="header-span">Helpers</span></h3>
             <h1 class="main-heading contact-page-heading">Get In Touch</h1>
         </header>
+        <!-- Bottom Section of the Contact Page -->
         <section>
-            <div class="bottom-section-contact">
+            <div class="bottom-section-contact" id="contact-content">
+                <!-- Contact Form of the Contact Page -->
                 <div class="contact-form">
                     <form action="">
                         <label for="user-name"></label>
@@ -39,6 +46,7 @@
                     </form>
                     <button class="button comment-button buton-large">Submit</button>
                 </div>
+                <!-- Social Media Icons -->
                 <div class="social-right-section">
                     <ul class="social-icons">
                         <li><i class="fab fa-facebook-f fa-3x"></i></li>
@@ -46,6 +54,7 @@
                         <li><i class="fab fa-twitter fa-3x"></i></li>
                         <li><i class="fab fa-whatsapp fa-3x"></i></li>
                     </ul>
+                    <!-- Contact Information -->
                     <p class="body-text">info@email.com</p>
                     <p class="body-text">123-456-7890</p>
                     <p class="body-text">123 Queen Street West</p>
@@ -56,6 +65,7 @@
             <div>
         </section>
     </main>
+    <!-- Footer Section Imported with SASS -->
     <footer class="footer-section">
         <p>Copyright &copy; 2019 HackerYou</p>
     </footer>

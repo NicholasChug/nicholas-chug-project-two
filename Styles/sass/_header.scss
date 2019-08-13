@@ -1,8 +1,10 @@
+// HackerYou Bootcamp Project #2 - Nicholas Chug
 
 // Index Page Header
 .index-header-section {
     background-image: url(../sanctuary-helpers-final-images/header-home.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
     position: relative;
 }
@@ -36,6 +38,7 @@
 .blog-header-section {
     background-image: url(../sanctuary-helpers-final-images/blog-image.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 80vh;
     position: relative;
 }
@@ -55,6 +58,7 @@
 .contact-section-header {
     background-image: url(../sanctuary-helpers-final-images/contact-image.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     height: 80vh;
     position: relative;
 }

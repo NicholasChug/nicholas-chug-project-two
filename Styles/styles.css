@@ -183,6 +183,20 @@ html {
   font-size: 62.5%;
 }
 
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+  font-size: 4rem;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
 .main-heading {
   font-size: 6.8rem;
   line-height: 6.4rem;
@@ -271,25 +285,10 @@ html {
   text-transform: uppercase;
 }
 
-.footer-section {
-  font-family: "Lato", sans-serif;
-  font-size: 2rem;
-  line-height: 3.2rem;
-  letter-spacing: 0.2rem;
-  background-color: #151514;
-  color: #f5f5f5;
-  text-align: center;
-  margin-bottom: 0;
-}
-
-.footer-section p {
-  margin-bottom: 0;
-  padding: 0.5%;
-}
-
 .index-header-section {
   background-image: url(../sanctuary-helpers-final-images/header-home.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
   position: relative;
 }
@@ -333,6 +332,7 @@ html {
 .blog-header-section {
   background-image: url(../sanctuary-helpers-final-images/blog-image.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 80vh;
   position: relative;
 }
@@ -351,6 +351,7 @@ html {
 .contact-section-header {
   background-image: url(../sanctuary-helpers-final-images/contact-image.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   height: 80vh;
   position: relative;
 }
@@ -360,13 +361,29 @@ html {
   padding-top: 5%;
 }
 
+.footer-section {
+  font-family: "Lato", sans-serif;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.2rem;
+  background-color: #151514;
+  color: #f5f5f5;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.footer-section p {
+  margin-bottom: 0;
+  padding: 0.5%;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
 .wrapper {
-  max-width: 2660px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 90%;
 }
@@ -683,6 +700,66 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 
 @media (max-width: 768px) {
+  .index-heading {
+    padding-left: 25%;
+    padding-top: 15%;
+  }
+  .header-left-image {
+    display: none;
+  }
+  .index-header-section {
+    height: 50vh;
+  }
+  .second-section-container {
+    display: block;
+  }
+  .second-section-text {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  .second-section-pic {
+    width: 40%;
+    margin: auto;
+  }
+  .third-section-container img {
+    padding: 0 2%;
+  }
+  .info-section-inside-container {
+    display: block;
+    text-align: center;
+    margin: 5% auto;
+  }
+  .info-section-inside-container div {
+    margin: 5% auto;
+  }
+  .fourth-section-container {
+    display: block;
+  }
+  .fourth-section-img-left {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    top: 40px;
+  }
+  .fourth-section-img-right {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    right: 0;
+    bottom: 40px;
+  }
+  .fourth-section-text-1 {
+    padding-top: 10%;
+    padding-bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .fourth-section-text-2 {
+    padding-bottom: 10%;
+    text-align: center;
+  }
   .blog-page-heading {
     padding-top: 15%;
   }
@@ -724,7 +801,34 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   }
 }
 
+@media (max-width: 600px) {
+  .index-heading {
+    font-size: 5rem;
+  }
+}
+
 @media (max-width: 375px) {
+  .index-heading {
+    font-size: 4rem;
+    line-height: 4.5rem;
+    padding-left: 15%;
+    padding-top: 25%;
+  }
+  .third-section-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .third-section-container img {
+    padding: 4% 0;
+  }
+  .fourth-section-img-left {
+    top: 10px;
+  }
+  .fourth-section-img-right {
+    bottom: 10px;
+  }
   .blog-page-heading {
     padding-top: 30%;
   }
@@ -762,6 +866,9 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
 }
 
 @media (max-width: 320px) {
+  .index-heading {
+    padding-top: 35%;
+  }
   .blog-page-heading {
     padding-top: 35%;
   }

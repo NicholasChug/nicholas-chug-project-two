@@ -11,7 +11,13 @@
     <script src="https://kit.fontawesome.com/79a297bdda.js"></script>
     <title>HackerYou Bootcamp Project #2 - Nicholas Chug</title>
 </head>
+<!-- Body Section of the Blog Page -->
 <body>
+    <!-- Accessible Skip Links -->
+    <a href="#blog-content" class="skip-link">Skip to blog content.</a>
+    <a href="#comment-content" class="skip-link">Skip to comments.</a>
+    <a href="#submission-content" class="skip-link">Skip to submission form.</a>
+    <!-- Main Section of the Blog Page -->
     <main>
         <header class="blog-header-section">
             <nav class="navbar">
@@ -21,14 +27,16 @@
                     <li><a class="active" href="blog-page.html">Blog</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
+                <!-- Hidden Burger Menu seen at smaller responsive sizes -->
                 <i class="fas fa-bars fa-2x"></i>
             </nav>
             <h3 class="logo">Sanctuary <span class="header-span">Helpers</span></h3>
             <h1 class="main-heading blog-page-heading">Blog</h1>
         </header>
-        <div class="bottom-section">
-            <img src="./sanctuary-helpers-final-images/blog-post-image.jpg" class="main-blog-image"alt="">
-            <section class="">
+        <!-- Bottom Section of the Blog Page -->
+        <div class="bottom-section" id="blog-section">
+            <img src="./sanctuary-helpers-final-images/blog-post-image.jpg" class="main-blog-image"alt="A photo depicting a bedroom tucked into a nook">
+            <section>
                 <div class="blog-text">
                     <h2 class="secondary-heading">Finding The Right Pieces For A New Space</h2>
                     <p class="date-text">Monday, October 5th, 2019 by <span class="bolded-text">Saron</span></p>
@@ -37,9 +45,9 @@
                     <p class="body-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi vero quos, a aut atque et, tempore, sequi est ullam nostrum minus? Quisquam neque aliquid odit quos illo modi reiciendis quia.</p>
                     <p class="body-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus vitae esse officiis dolorum veritatis facilis vero nemo. Ipsa voluptatibus iste ducimus quas repellendus nisi voluptas ab saepe, voluptate sapiente corporis!</p>
                 </div>
-    
+                <!-- Aside/Sidebar Section of the Blog Page -->
                 <div class="sidebar">
-                    <img src="./sanctuary-helpers-final-images/sidebar-image.jpg" alt="">
+                    <img src="./sanctuary-helpers-final-images/sidebar-image.jpg" alt="A modern style red, wireframed chandelier">
                     <h3 class="tertiary-heading">Our Mission</h3>
                     <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis quae unde libero magnam vitae! Aliquid explicabo ducimus cum, molestias maiores nisi vel sequi magni aut! Illum placeat sit repellendus et!</p>
         
@@ -51,21 +59,21 @@
                         <li class="body-text">Lorem ipsum dolor sit.</li>
                     </ul>
                 </div>
-                <div class="comments-section">
+                <!-- Comments section of the Blog Page -->
+                <div class="comments-section" id="comment-content">
                     <h3 class="tertiary-heading">Comments:</h3>
                     <div class="individual-comment">
                         <div class="comments-img">
-                            <img src="./sanctuary-helpers-final-images/comment-image.jpg" alt="">
+                            <img src="./sanctuary-helpers-final-images/comment-image.jpg" alt="A picture depicting a user of this site">
                         </div>
                         <div class="comments-text">
                             <p class="bolded-text">Tuesday October 9th, 2019 by Davin</p>
                             <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aut quia porro incidunt nisi odio cupiditate omnis, fuga velit veniam, doloremque eligendi nulla ducimus quibusdam dolor, tempore corrupti maxime blanditiis?</p>
                         </div>
                     </div>
-                    
                     <div class="individual-comment">
                         <div class="comments-img">
-                            <img src="./sanctuary-helpers-final-images/comment-image2.jpg" alt="">
+                            <img src="./sanctuary-helpers-final-images/comment-image2.jpg" alt="Another picture depicting a user of the site">
                         </div>
                         <div class="comments-text">
                             <p class="bolded-text">Wednesday October 10th, 2019 by Lisa</p>
@@ -73,8 +81,8 @@
                         </div>
                     </div>
                 </div>
-    
-                <div class="blog-form">
+                <!-- Submission form of the Blog Page -->
+                <div class="blog-form" id="submission-content">
                     <form action="">
                         <label for="user-name"></label>
                         <input class="blog-name body-text" name='user-name' type="text" placeholder="Name">
@@ -88,6 +96,7 @@
             </section>
         </div>
     </main>
+    <!-- Footer Section Imported with SASS -->
     <footer class="footer-section">
         <p>Copyright &copy; 2019 HackerYou</p>
     </footer>
