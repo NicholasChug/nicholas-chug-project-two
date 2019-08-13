@@ -141,6 +141,10 @@ h1, h2, h3, p {
     padding-bottom: 8%;
 }
 
+.banner-image {
+    width: 100%;
+}
+
 .fifth-section-container {
     display: flex;
     flex-direction: column;
@@ -457,6 +461,7 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
         padding: 4% 0;
     }
 
+    // Index Page - Fourth Section
     .fourth-section-img-left {
         top: 10px;
     }
